@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:text="@string/greeting" />
+
+    <TextView
+        android:id="@+id/definition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"        
+        android:layout_centerInParent="true"
+        android:text="@string/activity_question" />
+
+    <RadioGroup
+        android:id="@+id/activity_menu_radio_grp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/definition"
+        android:layout_centerHorizontal="true"
+        android:fadingEdge="vertical"
+        android:orientation="vertical"
+        android:paddingTop="20dp" >
+
+        <RadioButton
+            android:id="@+id/view_treasure_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/view_treasure_radio_btn"
+            android:onClick="onRadioButtonClicked" />
+
+        <RadioButton
+            android:id="@+id/spell_quiz_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/spell_quiz_radio_btn"
+            android:onClick="onRadioButtonClicked" />
+
+        <RadioButton
+            android:id="@+id/vocab_quiz_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vocab_quiz_radio_btn"
+            android:onClick="onRadioButtonClicked" />
+
+        <RadioButton
+            android:id="@+id/learn_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/learn_radio_btn"
+            android:onClick="onRadioButtonClicked" />
+
+        <RadioButton
+            android:id="@+id/add_words_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_words_radio_btn"
+            android:onClick="onRadioButtonClicked" />
+
+        <RadioButton
+            android:id="@+id/find_words_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/find_words_radio_btn"
+            android:onClick="onRadioButtonClicked" />
+
+    </RadioGroup>
+
+</RelativeLayout>

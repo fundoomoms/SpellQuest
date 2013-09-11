@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+    <item
+        android:id="@+id/spell_quiz"
+        android:icon="@drawable/ic_action_spell_quiz"
+        android:showAsAction="ifRoom"
+        android:title="@string/abt_spell_quiz"/>
+    <item
+        android:id="@+id/help"
+        android:icon="@drawable/ic_action_help"
+        android:showAsAction="ifRoom"
+        android:title="@string/abt_help"/>
+
+
+</menu>
